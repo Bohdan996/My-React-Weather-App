@@ -17,6 +17,11 @@
   object-position: center bottom;
   min-height: 105vh;
   width: 100vw;
+  display: none;
+
+  @media (min-width: 750px) {
+    display: block;
+  }
 }
 
 .header {

@@ -14,7 +14,7 @@
   &__data-box {
     position: absolute;
     background-color: rgb(212, 212, 212);
-    opacity: 50%;
+    opacity: 0.50;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -97,9 +97,15 @@
 
   &__temp-day {
     margin-bottom: 20px;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 
     @media (min-width: 750px) {
       margin-bottom: 0;
+      text-shadow: none;
     }
   }
 
@@ -140,7 +146,6 @@
 .table {
   position: relative;
   z-index: 2;
-  opacity: 100%;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -150,6 +155,7 @@
   &__row {
     display: flex;
     flex-direction: column;
+    padding: 2px;
 
     @media (min-width: 1040px) {
       flex-direction: row;
@@ -178,8 +184,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 12px;
-    min-width: 70px;
+    font-size: 11px;
+    min-width: 74px;
     border-right: 1px solid #000;
 
     &--red {
@@ -228,7 +234,7 @@
     width: max-content;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     padding-bottom: 5px;
 
     @media (min-width: 400px) {

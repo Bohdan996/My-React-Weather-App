@@ -6,7 +6,7 @@ type Props = {
   setCurrentCity: (arg: string) => void,
 };
 
-export const Search: React.FC<Props> = ({ setCurrentCity }) => {
+export const Search: React.FC<Props> = ({ setCurrentCity}) => {
   const [city, setCity] = useState('');
   const [placeholder, setPlaceholder] = useState('Weather in your city');
   const [emptyInput, setEmptyInput] = useState(false);
@@ -66,7 +66,6 @@ export const Search: React.FC<Props> = ({ setCurrentCity }) => {
               onKeyPress={handleKeyPress}
               onClick={handleInputClick}
               placeholder={placeholder}
-
             />
             {emptyInput && (
               <p className="empty-input">Please write the city</p>

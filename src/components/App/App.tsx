@@ -97,7 +97,9 @@ const App = () => {
         }} >
           <video className="video" src={video} autoPlay loop muted></video>
           <div className="header">
-            <Search setCurrentCity={setCurrentCity} />
+            <Search
+              setCurrentCity={setCurrentCity}
+            />
             <div className="header__title">
               <div className="header__city"
               >{cityName} ({country})</div>
@@ -115,7 +117,9 @@ const App = () => {
         }} >
           <video className="video" src={video} autoPlay loop muted></video>
           <div className="header">
-            <Search setCurrentCity={setCurrentCity} />
+              <Search
+                setCurrentCity={setCurrentCity}
+              />
             <div className="header__title">
                 <div className="header__city">City not found</div>
             </div>

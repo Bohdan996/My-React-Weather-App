@@ -1,4 +1,4 @@
-[Weather app](https://Bohdan996.github.io/my-app)
+[Weather app](https://bohdan996.github.io/My-React-Weather-App/)
 
 Small project to find weather in your town.
 

@@ -46,7 +46,7 @@ export const Main: React.FC<Props> = ({ dataDaily, temperature, textColor }) => 
                   <div
                     className="table__icon"
                     style={{
-                      backgroundImage: `url(http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png)`,
+                      backgroundImage: `url(https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png)`,
                     }}
                   >
                   </div>

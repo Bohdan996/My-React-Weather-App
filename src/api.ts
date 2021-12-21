@@ -1,5 +1,5 @@
 const API = 'https://api.openweathermap.org/data/2.5/onecall?';
-const API_GEO = 'http://api.openweathermap.org/geo/1.0/';
+const API_GEO = 'https://api.openweathermap.org/geo/1.0/';
 
 export const getDailyApibyCoords = (lat: number, lon: number) => {
   return fetch(`${API}lat=${lat}&lon=${lon}&exclude=hourly&appid=${process.env.REACT_APP_KEY}`)
